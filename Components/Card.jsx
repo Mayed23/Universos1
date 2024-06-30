@@ -3,10 +3,11 @@ import { View, Image, StyleSheet, Text } from "react-native";
 import { theme } from "../Config/Theme";
 
 
-export const Card = ({seanso, description,price}) => (
+export const Card = ({seanso, description, image, price}) => (
     <View style={styles.Card}>
-        <Image source={{ url:'../assets/imagen/jersey-basico.jpg' }}
-        style={styles.Image}
+        <Image source={{ uri: image }}
+        style={styles.image}
+        resizeMode="cover"
         />
         <View style={styles.info}>
             <Text style={styles.title}>{seanso}</Text>
@@ -18,11 +19,15 @@ export const Card = ({seanso, description,price}) => (
 
 const styles = StyleSheet.create({
     Card: {
+        alignContent: 'center',
         borderRadius: 16,
+        
     },
     
-    Image: {
-        height: 160,
+    image: {
+        height: 200,
+        width: 120,
+        alignItems: 'center',
         backgroundColor: theme.colors.primary[50],
     },
     info: {

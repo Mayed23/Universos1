@@ -1,16 +1,17 @@
-import { FlatList, View, Text, StyleSheet } from "react-native";
+import { FlatList, Text, StyleSheet } from "react-native";
 import products from "../Data/products.json";
 import { Card } from "../Components/Card";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export const ItemListCategory = ({ navigate }) => (
-  <View style={styles.itemListCategories}>
+  <SafeAreaView style={styles.itemListCategories}>
     <Text>Mayoral</Text>
     <FlatList
       contentContainerStyle={styles.list}
       data={products}
       renderItem={({ item }) => <Card {...item} />}
     />
-  </View>
+  </SafeAreaView>
 )
 
 const styles = StyleSheet.create({
