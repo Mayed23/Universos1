@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     width: 64,
   },
   name: {
-    color: theme.colors.primary[800],
+    color: theme.colors.primary[950],
     fontSize: 12,
     fontWeight: 'bold',
     textAlign: 'center',

@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   text: {
     marginTop: 15,
     fontFamily: 'Sora-Bold',
-    color: theme.colors.primary[800],
+    color: theme.colors.primary[950],
     fontSize: 18,
   },
 })

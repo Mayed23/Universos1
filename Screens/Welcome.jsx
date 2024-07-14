@@ -1,13 +1,20 @@
 import { StyleSheet, Text, View, Image, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Button } from '../Components/button.jsx';
+import { useNavigation } from '@react-navigation/native';
+import { ROUTE } from '../Navigation/Routes.js';
+import { theme } from '../Config/Theme.js';
+
 
 
 
 export const Welcome = () => {
-   const handlePress = () => {
-    navigate ({ path: 'home'})
-  }
+   const {navigate} = useNavigation()
+  
+   const handlePress = () =>{
+    navigate(ROUTE.HOME)
+   }
+  
   return (
     <SafeAreaView style={styles.safeArea}>
       <Image source={require('../assets/Imagen/img_inicio.png')}/>
@@ -36,6 +43,7 @@ const styles = StyleSheet.create({
   },
   texts: {
     alignItems: 'center',
+    color: theme.colors.primary[950],
     gap: 4,
   },
   title: {
@@ -43,7 +51,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   title: {
-    color: 'black',
+    color: theme.colors.primary[950],
     fontSize: 32,
   },
   logo: {

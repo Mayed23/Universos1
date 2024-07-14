@@ -28,7 +28,7 @@
         "expo-font",
         {
           "fonts": [
-            "./assets/Fonts/Sora-Medium.ttf"
+            "./assets/Fonts/Sora-bold.ttf"
           ]
         }
       ]

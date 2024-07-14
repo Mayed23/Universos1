@@ -1,26 +1,28 @@
 
-import { View, Image, StyleSheet, Text } from "react-native";
+import { View, Image, StyleSheet, Text, Pressable } from "react-native";
 import { theme } from "../Config/Theme";
 
 
-export const Card = ({seanso, description, image, price}) => (
-    <View style={styles.Card}>
+export const ProductItem = ({seanso, description, image, price, onPress}) => (
+    <Pressable style={styles.ProductItem} onPress={onPress}>
         <Image source={{ uri: image }}
         style={styles.image}
-        resizeMode="cover"
+        resizeMode="contain"
         />
         <View style={styles.info}>
             <Text style={styles.title}>{seanso}</Text>
             <Text style={styles.text}>{description}</Text>
             <Text style={styles.text}>{price}</Text>
         </View>
-    </View>
+    </Pressable>
 )
 
+
 const styles = StyleSheet.create({
-    Card: {
-        alignContent: 'center',
+    ProductItem: {
+      
         borderRadius: 16,
+        maxWidth: 480,
         
     },
     

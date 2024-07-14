@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
   },
   buttonText: {
-    color: 'blue',
+    color: theme.colors.primary[950],
     fontSize: 16,
     fontWeight: 'bold',
   },
