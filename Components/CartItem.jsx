@@ -10,6 +10,8 @@ export const CartItem = ({
   quantity,
   price,
   onDelete,
+  onIncrease,
+  onDecrease,
 }) => (
   <View style={styles.cartItem}>
     <Image style={styles.image} source={{ uri: image }} />
@@ -19,6 +21,15 @@ export const CartItem = ({
       <Text>Talle: {size}</Text>
       <Text>Cantidad: {quantity}</Text>
       <Text>{formatPrice(price)}</Text>
+      <View style={styles.quantityContainer}>
+        <Pressable style={styles.quantityButton} onPress={() => onDecrease(id)}>
+          <Text style={styles.DecreaseText}>-</Text>
+        </Pressable>
+        <Text style={styles.quantity}>{quantity}</Text>
+        <Pressable style={styles.quantityButton} onPress={() => onIncrease(id)}>
+          <Text style={styles.quantityText}>+</Text>
+        </Pressable>
+      </View>
       <Pressable style={styles.delete} onPress={() => onDelete(id)}>
         <Text style={styles.deleteText}>Eliminar</Text>
       </Pressable>
@@ -33,12 +44,30 @@ const styles = StyleSheet.create({
     gap: 16,
   },
   image: {
-    height: 96,
+    height: 100,
     width: 160,
   },
   info: {
     gap: 8,
     flex: 1,
+  },
+  quantityContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  quantityButton: {
+    backgroundColor: '#e5e7eb',
+    padding: 8,
+    borderRadius: 4,
+  },
+  quantityText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  quantity: {
+    fontSize: 16,
+    fontWeight: 'bold',
   },
   delete: {
     paddingHorizontal: 16,

@@ -9,7 +9,7 @@ export const CartStack = () => {
 
         return(
             <StacKNavigator screenOptions={{
-                headerTitleStyle: { fontFamily: "Sora.bold" },
+                headerTitleStyle: { fontFamily: "Sora-bold" },
                 headerShadowVisible: false,
                 }}
             >

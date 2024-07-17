@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     },
     text: {
         color: theme.colors.primary[950],
-        fontFamily: 'Sora.bold',
+        fontFamily: 'Sora-bold',
         fontSize: 24,
         marginLeft: 16,
         textAlign: 'center',

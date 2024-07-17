@@ -1,80 +1,80 @@
 [
     {
-        "id": "00001-1",
+        "id": "00001",
         "brand": "Mayoral",
-        "seanso": "Otoño-Invierno",
+        "seanso": "Otoño",
         "description": "Jersey básico Better Cotton bebér",
         "image": "https://assets.mayoral.com/images/t_auto_img,f_auto,c_limit,w_384/v1701192451/24-00303-046-XL-5/jersey-basico-better-cotton-bebe-sandia-XL-5.jpg",
         "price": 22000
     },
     {
-        "id": "00002-2",
+        "id": "00002",
         "brand": "Mayoral",
-        "seanso": "Otoño-Invierno",
+        "seanso": "Invierno",
         "description": "Gabardina lazada niña",
         "image": "https://assets.mayoral.com/images/t_auto_img,f_auto,c_limit,w_600/v1702911327/24-03480-065-XL-4/gabardina-lazada-nina-tinta-XL-4.jpg",
         "price": 36995
     },
     {
-       "id": "00003-2",
+       "id": "00003",
         "brand": "Mayoral",
-        "seanso": "Otoño-Invierno",
+        "seanso": "Invierno",
         "description": "Chaleco acolchado botones niña",
         "image": "https://assets.mayoral.com/images/t_auto_img,f_auto,c_limit,w_750/v1704822837/24-54458-700-XL-4/chaleco-acolchado-botones-nina-angora-XL-4.jpg",
         "price": 45990
     },
     {
-        "id": "00004-1",
+        "id": "00004",
         "brand": "Mayoral",
-        "seanso": "Otoño-Invierno",
+        "seanso": "Invierno",
         "description": "Chaqueta acolchada ultraligera chico",
         "image": "https://assets.mayoral.com/images/t_auto_img,f_auto,c_limit,w_600/v1707124293/24-06479-032-XL-4/chaqueta-acolchada-ultraligera-chico-marino-XL-4.jpg",
         "price": 43950
     },
     {
-       "id": "00005-1",
+       "id": "00005",
         "brand": "Mayoral",
-        "seanso": "Otoño-Invierno",
+        "seanso": "Invierno",
         "description": "Chaleco acolchado chico",
         "image": "https://assets.mayoral.com/images/t_auto_img,f_auto,c_limit,w_600/v1706632010/24-06342-017-XL-4/chaleco-acolchado-chico-safari-XL-4.jpg",
         "price": 38690
     },
     {
-        "id": "00006-2",
+        "id": "00006",
          "brand": "Mayoral",
-         "seanso": "Otoño-Invierno",
+         "seanso": "Otoño",
          "description": "Jersey flores jacquard bebé",
          "image": "https://assets.mayoral.com/images/t_auto_img,f_auto,c_limit,w_600/v1713788703/14-02321-019-XL-4/jersey-flores-jacquard-bebe-jade-XL-4.jpg",
          "price": 37900
      },
      {
-        "id": "00007-2",
+        "id": "00007",
         "brand": "Mayoral",
-        "seanso": "Primavera-Verano",
+        "seanso": "Primavera",
         "description": "Body tutú con diadema Better Cotton recién nacido",
         "image": "https://assets.mayoral.com/images/t_auto_img,f_auto,c_limit,w_600/v1701193015/24-01702-060-XL-4/body-tutu-con-diadema-better-cotton-recien-nacido-nude-XL-4.jpg",
         "price": 66500
     },
     {
-        "id": "00008-1",
+        "id": "00008",
         "brand": "Mayoral",
-        "seanso": "Primavera-Verano",
+        "seanso": "Primavera",
         "description": "Peto con gorro bucket recién nacido",
         "image": "https://assets.mayoral.com/images/t_auto_img,f_auto,c_limit,w_384/v1702635805/24-01613-037-XL-4/peto-con-gorro-bucket-recien-nacido-kale-XL-4.jpg",
         "price": 36500
     },
     {
-        "id": "00009-1",
+        "id": "00009",
         "brand": "Mayoral",
-        "seanso": "Primavera-Verano",
+        "seanso": "Verano",
         "description": "Bermuda chino Better Cotton niño",
         "image": "https://assets.mayoral.com/images/t_auto_img,f_auto,c_limit,w_600/v1702630220/24-00202-055-XL-4/bermuda-chino-better-cotton-nino-ocre-XL-4.jpg",
         "price": 42500
     },
     {
-        "id": "00010-2",
+        "id": "00010",
         "brand": "Mayoral",
-        "seanso": "Primavera-Verano",
+        "seanso": "Verano",
         "description": "Falda rayas chica",
         "image": "https://assets.mayoral.com/images/t_auto_img,f_auto,c_limit,w_384/v1702650165/24-06938-069-XL-5/falda-rayas-chica-teja-XL-5.jpg",
         "price": 23890

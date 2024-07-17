@@ -3,13 +3,23 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
-import { Navigator} from "./Navigation/Navigator.js";
+import { Provider } from "react-redux";
+import { store } from "./Store/Index.js";
+import { MainNavigator } from "./Navigation/MainNavigator.jsx";
+import { init } from "./db/index.js";
+
+
 
 SplashScreen.preventAutoHideAsync();
 
+init()
+  .then(() => console.log('Database initialized'))
+  .catch(err => console.error('Database initialization failed', err))
+
+
 export default function App() {
   const [fontsLoaded, fontError] = useFonts({
-    Sorabold: require("./assets/Fonts/Sora-bold.ttf"),
+    'Sora-bold': require("./assets/Fonts/Sora-bold.ttf"),
   });
 
   useEffect(() => {
@@ -24,10 +34,11 @@ export default function App() {
   if (!fontsLoaded && !fontError) return null;
 
   return (
-    <SafeAreaProvider>
-      
-        <StatusBar backgroundColor="white" style="dark" />
-        <Navigator/>
-    </SafeAreaProvider>
+    <Provider store={store}>
+      <SafeAreaProvider>
+        <StatusBar backgroundColor='white' style='dark' />
+        <MainNavigator/>
+      </SafeAreaProvider>
+    </Provider>
   );
 }

@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-// import { Cart } from '../screens/cart'
 import { Orders } from '../Screens/Orders'
 import { ROUTE } from './Routes'
+
 
 const { Navigator: StackNavigator, Screen: StackScreen } =
   createNativeStackNavigator()

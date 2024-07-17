@@ -1,18 +1,18 @@
-
 import { View, Image, StyleSheet, Text, Pressable } from "react-native";
 import { theme } from "../Config/Theme";
+import { formatPrice } from "../Utils/Price";
 
 
-export const ProductItem = ({seanso, description, image, price, onPress}) => (
+export const ProductItem = ({ seanso, description, image, price, onPress }) => (
     <Pressable style={styles.ProductItem} onPress={onPress}>
         <Image source={{ uri: image }}
-        style={styles.image}
-        resizeMode="contain"
+            style={styles.image}
+            resizeMode="contain"
         />
         <View style={styles.info}>
             <Text style={styles.title}>{seanso}</Text>
             <Text style={styles.text}>{description}</Text>
-            <Text style={styles.text}>{price}</Text>
+            <Text style={styles.text}>{formatPrice(price)}</Text>
         </View>
     </Pressable>
 )
@@ -20,12 +20,10 @@ export const ProductItem = ({seanso, description, image, price, onPress}) => (
 
 const styles = StyleSheet.create({
     ProductItem: {
-      
         borderRadius: 16,
         maxWidth: 480,
-        
     },
-    
+
     image: {
         height: 200,
         width: 120,

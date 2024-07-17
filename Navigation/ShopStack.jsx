@@ -2,7 +2,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { Welcome } from "../Screens/Welcome"
 import { Home } from "../Screens/Home"
 import { ItemDetail } from "../Screens/ItemDetail"
-import { ItemListCategories } from "../Screens/ItemListCategories"
+import { ItemListCategory } from "../Screens/ItemListCategory"
 import { ROUTE } from "./Routes"
 
 
@@ -10,7 +10,7 @@ const { Navigator: StacKNavigator, Screen: StackScreen } = createNativeStackNavi
 
 export const ShopStack = () => (
     <StacKNavigator screenOptions={{
-        headerTitleStyle: { fontFamily: "Sora.bold" },
+        headerTitleStyle: { fontFamily: "Sora-bold" },
         headerShadowVisible: false,
     }}>
         <StackScreen name={ROUTE.WELCOME} component={Welcome}
@@ -19,7 +19,7 @@ export const ShopStack = () => (
         options={{ headerTitle: 'Universos Tienda', 
             headerBackVisible:'false'
         }}/>
-        <StackScreen name={ROUTE.ITEM_LIST_CATEGORIES} component={ItemListCategories}
+        <StackScreen name={ROUTE.ITEM_LIST_CATEGORY} component={ItemListCategory}
             options={{ headerTitle: 'Lista Mayoral', 
             headerBackVisible:'false'
             }} />

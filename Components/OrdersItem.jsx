@@ -17,6 +17,6 @@ export const styles = StyleSheet.create({
     padding: 16,
   },
   orderText: {
-    fontFamily: 'Sora',
+    fontFamily: 'Sora-bold',
   },
 })
