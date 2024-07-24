@@ -3,6 +3,7 @@ import { MyProfile } from "../Screens/MyProfile";
 import { ImageSelector } from "../Screens/ImagenSelector";
 import { ListAddress } from "../Screens/ListAddress";
 import { LocationSelector } from "../Screens/LocationSelector";
+import { ROUTE } from "./Routes";
 
 
 const { Navigator, Screen } = createNativeStackNavigator()
