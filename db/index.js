@@ -1,4 +1,5 @@
-import * as SQLite from "expo-sqlite";
+import * as SQLite from 'expo-sqlite'
+
 
 let db = null;
 
@@ -8,6 +9,7 @@ export const init = async () => {
     "CREATE TABLE IF NOT EXISTS sessions (localId TEXT PRIMARY KEY NOT NULL, email TEXT NOT NULL, token TEXT NOT NULL)"
   )
 };
+
 
 export const insertSession = async ({ localId, email, token }) => {
   try {
@@ -24,7 +26,7 @@ export const insertSession = async ({ localId, email, token }) => {
 
 export const deleteSession = async () => {
   try {
-    await db.runAsync("DELETE FROM sessions");
+    await db.runAsync ("DELETE FROM sessions");
   } catch (error) {
     console.error("Error eliminando sesión:", error);
   }

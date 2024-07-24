@@ -1,9 +1,9 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
-import { Button } from '../Components/Button'
 import { useNavigation } from '@react-navigation/native'
 import { useSelector } from 'react-redux'
 import { ROUTE } from '../Navigation/Routes'
-import { theme } from '../Config/theme'
+import { theme } from '../Config/Theme'
+import { Button } from '../Components/button'
 
 export const MyProfile = () => {
   const { navigate } = useNavigation()
@@ -20,7 +20,7 @@ export const MyProfile = () => {
         source={
           photo
             ? { uri: photo }
-            : require('../assets/Imagen/profile.png')
+            : require('../assets/Imagen/profile_placeholder.png')
         }
         resizeMode='cover'
         style={styles.image}

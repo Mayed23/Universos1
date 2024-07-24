@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import { formatDate } from '../Utils/Data.js'
-import { formatPrice } from '../Utils/Price'
+import { formatPrice } from '../Utils/Price.js'
 
 
 export const OrderItem = ({ createdAt, totalPrice }) => (

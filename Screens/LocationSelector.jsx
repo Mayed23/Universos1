@@ -4,10 +4,10 @@ import { theme } from '../Config/Theme'
 import * as Location from 'expo-location'
 import { MapPreview } from '../Components/Map'
 import { googleAPI } from '../Config/GoogleApi'
-import { usePostUserLocationMutation } from '../Services/ShopService'
+import { usePostUserLocationMutation } from '../Services/ShopServices'
 import { Button } from '../Components/button'
 import { useDispatch, useSelector } from 'react-redux'
-import { setUserLocation } from '../features/auth/authSlice'
+import { setUserLocation } from '../Features/auth/authSlice'
 import { useNavigation } from '@react-navigation/native'
 
 export const LocationSelector = () => {
@@ -110,6 +110,6 @@ const styles = StyleSheet.create({
     fontSize: 24,
   },
   text: {
-    color: theme.colors.gray[500],
+    color: theme.colors.primary[500],
   },
 })

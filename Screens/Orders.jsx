@@ -6,7 +6,7 @@ import { database } from '../Firebase/database'; // Asegúrate de tener la confi
 import { setCart } from '../Features/cart/cartSlice'; // Asegúrate de tener una acción para actualizar el carrito
 
 export const Orders = ({ navigation }) => {
-  const [orders, setOrders] = useState([]);
+  const [Orders, setOrders] = useState([]);
   const cart = useSelector(state => state.cart.value);
   const dispatch = useDispatch();
 
